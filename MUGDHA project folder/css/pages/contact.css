@@ -1,0 +1,231 @@
+/* css/pages/contact.css — Light Mode */
+
+/* Contact Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+/* Form Container */
+.form-container {
+  background-color: var(--bg-surface);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Form Progress Bar */
+.form-progress {
+  display: flex;
+  margin-bottom: var(--space-6);
+  border-bottom: 2px solid var(--gray-100);
+}
+
+.progress-step {
+  flex: 1;
+  text-align: center;
+  padding-bottom: var(--space-3);
+  font-weight: 500;
+  color: var(--text-muted);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.progress-step::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.progress-step.active {
+  color: var(--gold-dark);
+  font-weight: 600;
+}
+
+.progress-step.active::after {
+  transform: scaleX(1);
+}
+
+/* Form Steps */
+.form-step {
+  display: none;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.form-step.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Groups & Controls */
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: var(--fs-small);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1.5px solid rgba(0, 0, 0, 0.22);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+}
+
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+  padding: var(--space-3) var(--space-4);
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.radio-label:hover {
+  background-color: var(--bg-surface-alt);
+  border-color: rgba(184, 134, 11, 0.3);
+}
+
+.radio-label input[type="radio"] {
+  accent-color: var(--gold);
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+}
+
+/* Form Actions */
+.form-actions {
+  margin-top: var(--space-6);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-actions--split {
+  justify-content: space-between;
+}
+
+/* Contact Info Cards */
+.contact-card {
+  background-color: var(--bg-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Map container */
+.map-container {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: var(--space-4);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+/* Contact info items */
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-info-item:hover {
+  color: var(--gold-dark);
+}
+
+.contact-info-item svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Success message */
+#form-success {
+  text-align: center;
+  padding: var(--space-8);
+}
+
+#form-success h3 {
+  color: var(--gold-dark);
+  margin-bottom: var(--space-4);
+}
+
+/* Trust text */
+.form-trust-text {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: var(--space-4);
+}

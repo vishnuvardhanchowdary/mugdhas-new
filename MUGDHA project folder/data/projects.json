@@ -1,0 +1,82 @@
+{
+  "projects": [
+    {
+      "slug": "bhagya-nagar-ongole",
+      "name": "Bhagya Nagar",
+      "location": "Ongole, Prakasam District",
+      "status": "ongoing",
+      "totalPlots": 60,
+      "soldPlots": 42,
+      "description": "Premium residential plots in a rapidly growing locality of Ongole. Well-planned layout with wide roads, underground drainage, and all essential amenities.",
+      "images": [
+        "assets/images/bhagya-nagar-1.jpg",
+        "assets/images/bhagya-nagar-2.jpg",
+        "assets/images/bhagya-nagar-3.jpg"
+      ],
+      "features": [
+        "Clear legal titles with DTCP-approved layout",
+        "Well-laid BT roads with underground drainage",
+        "24/7 water supply and electricity connections",
+        "Proximity to schools, hospitals, and markets",
+        "Gated community with compound wall",
+        "Parks and green spaces within the layout"
+      ],
+      "bookingDetails": "Booking starts at ₹25,000. Flexible payment plans available. Contact us at 9951028866 for site visits and pricing details.",
+      "highlights": {
+        "plotSizes": "150 - 300 sq. yards",
+        "facing": "East & North facing plots available",
+        "possession": "Immediate registration available for sold plots"
+      }
+    },
+    {
+      "slug": "upcoming-luxury-villas",
+      "name": "Mugdha Green Villas",
+      "location": "Ongole, Andhra Pradesh",
+      "status": "upcoming",
+      "totalPlots": null,
+      "soldPlots": null,
+      "description": "Upcoming luxury villa project featuring modern architecture, sustainable design, and premium amenities. Pre-launch registrations opening soon.",
+      "images": [
+        "assets/images/project-placeholder.jpg"
+      ],
+      "features": [
+        "Contemporary villa designs",
+        "Eco-friendly construction practices",
+        "Premium community amenities",
+        "Prime location with excellent connectivity"
+      ],
+      "bookingDetails": "Pre-launch registrations opening soon. Register your interest to get early-bird pricing.",
+      "highlights": {
+        "plotSizes": "To be announced",
+        "facing": "Multiple orientations available",
+        "possession": "Expected 2027"
+      }
+    },
+    {
+      "slug": "mugdha-serene-park",
+      "name": "Mugdha Serene Park",
+      "location": "East & South 40 Feet Road Junction, Ongole",
+      "status": "ongoing",
+      "totalPlots": 20,
+      "soldPlots": 14,
+      "description": "Modern multi-storey luxury apartment complex featuring contemporary architecture, wooden accent paneling, spacious balconies, and private gated entry.",
+      "images": [
+        "assets/images/mugdha-serene-park.jpg"
+      ],
+      "features": [
+        "Contemporary 5-storey luxury apartment design",
+        "Prime corner location on 40-foot wide roads",
+        "Private gated compound with dedicated parking",
+        "Spacious balconies with glass railings & green views",
+        "Elevator, 24/7 power backup & water supply",
+        "100% Vasthu compliant floor plans"
+      ],
+      "bookingDetails": "Flats available for immediate booking. Contact 9951028866 for floor plans and site visits.",
+      "highlights": {
+        "plotSizes": "2 BHK & 3 BHK Apartments (1250 - 1850 sq. ft.)",
+        "facing": "East & South 40 Feet Road Facing",
+        "possession": "Ready for Occupation / Finishing Stage"
+      }
+    }
+  ]
+}

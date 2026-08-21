@@ -1,0 +1,187 @@
+/* ============================================
+   MUGDHA CONSTRUCTIONS LLP — Base Styles
+   Reset, typography, global elements
+   ============================================ */
+
+/* ── Modern Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+a:hover {
+  color: var(--orange-dark);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+p {
+  color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
+}
+
+.text-gold, .text-orange {
+  color: var(--orange);
+}
+
+.text-navy {
+  color: var(--navy);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+strong {
+  font-weight: var(--fw-semibold);
+  color: var(--navy);
+}
+
+/* ── Selection ── */
+::selection {
+  background: var(--orange);
+  color: #FFFFFF;
+}
+
+/* ── Focus Rings ── */
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 5px;
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
+
+/* ── Section Dividers ── */
+.gold-divider, .orange-divider {
+  height: 3px;
+  width: 80px;
+  background: linear-gradient(90deg, var(--orange), var(--navy));
+  border: none;
+  border-radius: 2px;
+  margin: var(--space-4) 0;
+}
+
+.gold-divider--center, .orange-divider--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Section Labels ── */
+.section-label {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: var(--space-3);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.section-label::before {
+  content: '';
+  width: 16px;
+  height: 2px;
+  background: var(--orange);
+  display: inline-block;
+}
+
+/* ── Skip Link ── */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--orange);
+  color: #FFFFFF;
+  padding: var(--space-3) var(--space-6);
+  z-index: 10000;
+  border-radius: var(--radius-md);
+  font-weight: var(--fw-semibold);
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}

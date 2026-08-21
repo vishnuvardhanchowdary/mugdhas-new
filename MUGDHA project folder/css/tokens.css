@@ -1,0 +1,119 @@
+/* ============================================
+   MUGDHA CONSTRUCTIONS LLP — Design Tokens
+   Brand Theme: Construction Orange (#F56B00) + Executive Navy Blue (#0A2540) + Off-White (#F8F9FA)
+   ============================================ */
+
+:root {
+  /* ── Brand Theme Colors (Orange & Dark Navy Blue) ── */
+  --orange:           #F56B00;
+  --orange-light:     #FF7A14;
+  --orange-dark:      #D95B00;
+  --orange-glow:      rgba(245, 107, 0, 0.20);
+
+  --navy:             #0A2540;
+  --navy-dark:        #06182B;
+  --navy-light:       #14355A;
+  --navy-surface:     #1E4066;
+
+  /* ── Mapped Primary Brand Tokens ── */
+  --gold:             #F56B00; /* Primary Accent: Vibrant Orange */
+  --gold-light:       #FF8A24;
+  --gold-dark:        #0A2540; /* Secondary Accent: Executive Navy */
+  --gold-glow:        rgba(245, 107, 0, 0.20);
+  --charcoal:         #0A2540; /* Primary Headings: Deep Navy */
+
+  /* ── Light-mode Surfaces & Backgrounds ── */
+  --bg-primary:       #F8F9FA;
+  --bg-secondary:     #F0F4F8;
+  --bg-surface:       #FFFFFF;
+  --bg-surface-alt:   #E9ECEF;
+  --bg-dark:          #0A2540; /* Executive Navy Dark Footer & Banners */
+
+  /* ── Neutrals & Text ── */
+  --white:            #F8F9FA;
+  --white-pure:       #FFFFFF;
+  --gray-100:         #E9ECEF;
+  --gray-200:         #DEE2E6;
+  --gray-300:         #CED4DA;
+  --gray-400:         #6C757D;
+  --gray-500:         #495057;
+  --text-primary:     #0A2540; /* Dark Navy for maximum legibility */
+  --text-secondary:   #334E68;
+  --text-muted:       #627D98;
+  --text-dark:        #0A2540;
+  --text-on-dark:     #F8F9FA;
+
+  /* ── Typography ── */
+  --font-heading:     'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body:        'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --fs-display:       clamp(2.5rem, 5vw, 4.5rem);
+  --fs-h1:            clamp(2rem, 4vw, 3.5rem);
+  --fs-h2:            clamp(1.5rem, 3vw, 2.5rem);
+  --fs-h3:            clamp(1.2rem, 2.5vw, 1.75rem);
+  --fs-h4:            clamp(1rem, 1.5vw, 1.25rem);
+  --fs-body:          1rem;
+  --fs-body-lg:       1.125rem;
+  --fs-small:         0.875rem;
+  --fs-xs:            0.75rem;
+
+  --fw-regular:       400;
+  --fw-medium:        500;
+  --fw-semibold:      600;
+  --fw-bold:          700;
+
+  --lh-tight:         1.2;
+  --lh-normal:        1.6;
+  --lh-relaxed:       1.8;
+
+  --ls-wide:          0.08em;
+  --ls-wider:         0.15em;
+  --ls-widest:        0.25em;
+
+  /* ── Spacing (4px base) ── */
+  --space-1:          0.25rem;   /* 4px */
+  --space-2:          0.5rem;    /* 8px */
+  --space-3:          0.75rem;   /* 12px */
+  --space-4:          1rem;      /* 16px */
+  --space-5:          1.25rem;   /* 20px */
+  --space-6:          1.5rem;    /* 24px */
+  --space-8:          2rem;      /* 32px */
+  --space-10:         2.5rem;    /* 40px */
+  --space-12:         3rem;      /* 48px */
+  --space-16:         4rem;      /* 64px */
+  --space-20:         5rem;      /* 80px */
+  --space-24:         6rem;      /* 96px */
+  --space-32:         8rem;      /* 128px */
+
+  /* ── Container ── */
+  --container-max:    1280px;
+  --container-narrow: 960px;
+  --container-wide:   1440px;
+  --container-padding: var(--space-6);
+
+  /* ── Borders & Radii ── */
+  --radius-sm:        6px;
+  --radius-md:        10px;
+  --radius-lg:        16px;
+  --radius-xl:        24px;
+  --radius-full:      9999px;
+
+  --border-subtle:    1px solid rgba(10, 37, 64, 0.08);
+  --border-gold:      1.5px solid var(--orange);
+  --border-navy:      1.5px solid var(--navy);
+
+  /* ── Shadows & Aesthetics ── */
+  --shadow-sm:        0 2px 10px rgba(10, 37, 64, 0.06);
+  --shadow-md:        0 6px 20px rgba(10, 37, 64, 0.10);
+  --shadow-lg:        0 12px 40px rgba(10, 37, 64, 0.14);
+  --shadow-gold:      0 8px 24px rgba(245, 107, 0, 0.28);
+  --shadow-navy:      0 8px 24px rgba(10, 37, 64, 0.30);
+
+  /* ── Transitions ── */
+  --duration-fast:    150ms;
+  --duration-normal:  300ms;
+  --duration-slow:    500ms;
+
+  --ease-out:         cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:      cubic-bezier(0.45, 0, 0.55, 1);
+}

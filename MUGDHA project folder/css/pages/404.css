@@ -1,0 +1,121 @@
+/* ============================================
+   MUGDHA CONSTRUCTIONS LLP — 404 Page Styles
+   ============================================ */
+
+.error-hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(80px + var(--space-16)) 0 var(--space-16);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.error-hero__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.error-code {
+  font-family: var(--font-heading);
+  font-size: clamp(6rem, 16vw, 11rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: var(--ls-wide);
+  color: var(--gold);
+  text-shadow: 0 0 40px var(--gold-glow), 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--space-4);
+  position: relative;
+  display: inline-block;
+  user-select: none;
+}
+
+.error-code::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.error-title {
+  font-size: var(--fs-h1);
+  color: var(--white);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-4);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-wide);
+}
+
+.error-subtitle {
+  font-size: var(--fs-body-lg);
+  color: var(--text-secondary);
+  max-width: 620px;
+  margin: 0 auto var(--space-8);
+  line-height: var(--lh-relaxed);
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.error-quick-links {
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: var(--border-subtle);
+}
+
+.error-quick-links__title {
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-wider);
+  color: var(--gold);
+  margin-bottom: var(--space-4);
+}
+
+.error-quick-links__grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.error-quick-links__link {
+  color: var(--text-secondary);
+  font-size: var(--fs-small);
+  transition: color var(--duration-fast) var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.error-quick-links__link:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 576px) {
+  .error-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .error-actions .btn {
+    width: 100%;
+  }
+
+  .error-quick-links__grid {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}
