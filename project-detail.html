@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Project Details | Mugdha Constructions LLP</title>
+ <meta name="description" content="View detailed information, gallery, and availability for our construction and layout projects.">
+ 
+ <meta property="og:title" content="Project Details | Mugdha Constructions LLP">
+ <meta property="og:description" content="View detailed information, gallery, and availability for our construction and layout projects.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://mugdhas.com/project-detail.html">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="css/tokens.css">
+ <link rel="stylesheet" href="css/base.css">
+ <link rel="stylesheet" href="css/layout.css">
+ <link rel="stylesheet" href="css/components.css">
+ <link rel="stylesheet" href="css/animations.css">
+ <link rel="stylesheet" href="css/pages/project-detail.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header" role="banner">
+ <div class="container header-inner">
+ <a href="index.html" class="site-logo" aria-label="Mugdha Constructions LLP — Home">
+ <div class="site-logo__icon">
+ <img src="assets/images/mugdha-logo.png" alt="Mugdha Constructions Logo" width="56" height="56">
+ </div>
+ <div class="site-logo__text">
+ <span class="site-logo__name">Mugdha Constructions LLP</span>
+ <span class="site-logo__tagline">Building Trust. Shaping Structures.</span>
+ </div>
+ </a>
+ <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+ <a href="index.html" class="nav-link">Home</a>
+ <a href="construction.html" class="nav-link">Construction</a>
+ <a href="hvac.html" class="nav-link">HVAC</a>
+ <a href="projects.html" class="nav-link">Projects</a>
+ <a href="about.html" class="nav-link">About</a>
+ <a href="contact.html" class="nav-link nav-cta btn btn--primary btn--small">Get Quote</a>
+ </nav>
+ <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+</header>
+<div class="nav-overlay"></div>
+
+<main id="main-content">
+
+ <!-- Loading State -->
+ <div id="project-loading" class="container py-section text-center">
+ <h2>Loading Project Details...</h2>
+ </div>
+
+ <!-- Error State -->
+ <div id="project-error" class="container py-section text-center" style="display: none;">
+ <h2>Project Not Found</h2>
+ <p>Sorry, we couldn't find the project you're looking for.</p>
+ <a href="projects.html" class="btn btn--primary mt-4">View All Projects</a>
+ </div>
+
+ <div id="project-content" style="display: none;">
+ <!-- Hero -->
+ <section class="project-hero bg-dark text-light reveal">
+ <div class="container project-hero__inner">
+ <h1 id="project-title" class="project-hero__title">Project Name</h1>
+ <p id="project-location" class="project-hero__location text-gold">Location</p>
+ </div>
+ </section>
+
+ <!-- Plot Availability Tracker -->
+ <section class="section py-section bg-light project-tracker-section reveal" id="availability-section" style="display: none;">
+ <div class="container text-center">
+ <div class="section-label"><span>01</span>Availability</div>
+ <h2 class="mb-4">Current Plot Availability</h2>
+ 
+ <div class="project-tracker">
+ <div class="project-tracker__count h2 mb-2">
+ <span class="plot-sold text-gold" id="tracker-sold" data-count-to="0">0</span>
+ <span class="plot-total text-muted">of <span id="tracker-total">0</span>Plots Sold</span>
+ </div>
+ 
+ <div class="plot-bar-container large-bar mb-4">
+ <div class="plot-bar" id="tracker-bar" data-sold="0" data-total="100">
+ <div class="plot-bar__fill"></div>
+ </div>
+ <div class="plot-bar__labels">
+ <span class="text-gold">Sold: <span id="tracker-sold-label">0</span></span>
+ <span>Available: <span id="tracker-avail-label">0</span></span>
+ </div>
+ </div>
+ 
+ <a href="#booking-cta" class="btn btn--primary btn--large">Book Now</a>
+ </div>
+ </div>
+ </section>
+
+ <!-- Project Gallery -->
+ <section class="section py-section project-gallery-section reveal">
+ <div class="container">
+ <div class="section-label"><span>02</span>Gallery</div>
+ <h2>Project Gallery</h2>
+ 
+ <div class="gallery-grid mt-4" id="project-gallery">
+ <!-- Gallery items populated by JS -->
+ </div>
+ </div>
+ </section>
+
+ <!-- Project Details -->
+ <section class="section py-section bg-light project-details-section reveal">
+ <div class="container">
+ <div class="section-label"><span>03</span>Details</div>
+ 
+ <div class="project-details-grid">
+ <div class="project-details-left">
+ <h2>About The Project</h2>
+ <div id="project-description" class="content-body mt-3 mb-5">
+ <!-- Description populated by JS -->
+ </div>
+
+ <h3>Project Features</h3>
+ <ul class="features-list mt-3" id="project-features">
+ <!-- Features populated by JS -->
+ </ul>
+ </div>
+ 
+ <div class="project-details-right">
+ <div class="highlights-card">
+ <h3>Project Highlights</h3>
+ <ul class="highlights-list mt-3" id="project-highlights">
+ <!-- Highlights populated by JS -->
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Booking CTA -->
+ <section id="booking-cta" class="section py-section bg-dark text-light booking-cta-section text-center reveal">
+ <div class="container">
+ <h2>Ready to Book Your Plot?</h2>
+ <p class="mb-5 mt-3 text-secondary" style="max-width: 600px; margin-inline: auto;" id="project-booking-info">Contact us today to schedule a site visit or book your plot.</p>
+ 
+ <div class="btn-group justify-content-center">
+ <a href="tel:9951028866" class="btn btn--primary">
+ Call to Book
+ </a>
+ <a href="https://wa.me/919951028866" class="btn btn--outline-gold" target="_blank" rel="noopener">
+ WhatsApp Us
+ </a>
+ <a href="contact.html?tab=project" class="btn btn--outline">
+ Visit Contact Page
+ </a>
+ </div>
+ </div>
+ </section>
+ </div>
+
+</main>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="gallery-lightbox" aria-hidden="true" role="dialog">
+ <div class="lightbox__overlay" id="lightbox-overlay"></div>
+ <div class="lightbox__content">
+ <button class="lightbox__close" aria-label="Close lightbox" id="lightbox-close">
+ <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+ </button>
+ <div class="lightbox__image-container">
+ <img src="" alt="" id="lightbox-img" class="lightbox__img">
+ </div>
+ <div class="lightbox__controls">
+ <button class="lightbox__btn lightbox__prev" aria-label="Previous image" id="lightbox-prev">
+ <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><polyline points="15 18 9 12 15 6"></polyline></svg>
+ </button>
+ <button class="lightbox__btn lightbox__next" aria-label="Next image" id="lightbox-next">
+ <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+ </button>
+ </div>
+ <div class="lightbox__caption" id="lightbox-caption"></div>
+ </div>
+</div>
+
+<footer class="site-footer bg-blueprint bg-grain" role="contentinfo">
+ <span class="bg-text">BUILT TO LAST</span>
+ <div class="container">
+ <div class="footer-top">
+ <div class="footer-brand">
+ <a href="index.html" class="site-logo" style="margin-bottom: var(--space-2);">
+ <div class="site-logo__icon">
+ <img src="assets/images/mugdha-logo.png" alt="Mugdha Constructions Logo" width="56" height="56">
+ </div>
+ <div class="site-logo__text">
+ <span class="site-logo__name">Mugdha Constructions LLP</span>
+ <span class="site-logo__tagline">Building Trust. Shaping Structures.</span>
+ </div>
+ </a>
+ <p>Reliable civil construction and HVAC solutions across Andhra Pradesh &amp; Telangana — quality execution, timely delivery, transparent dealings.</p>
+ </div>
+ <div class="footer-nav">
+ <h4 class="footer-heading">Quick Links</h4>
+ <div class="footer-links">
+ <a href="construction.html">Construction Services</a>
+ <a href="hvac.html">HVAC Services</a>
+ <a href="projects.html">Our Projects</a>
+ <a href="about.html">About Us</a>
+ <a href="contact.html">Contact / Get Quote</a>
+ </div>
+ </div>
+ <div class="footer-services">
+ <h4 class="footer-heading">Services</h4>
+ <div class="footer-links">
+ <a href="construction.html#plot-owner">Plot Owner Construction</a>
+ <a href="construction.html#new-home">New Home Buyers</a>
+ <a href="construction.html#land-dev">Land Development</a>
+ <a href="construction.html#renovation">Renovation</a>
+ <a href="hvac.html">HVAC / AC Ducting</a>
+ </div>
+ </div>
+ <div class="footer-contact">
+ <h4 class="footer-heading">Get in Touch</h4>
+ <div class="footer-contact-item">
+ <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+ <div><a href="tel:9951028866" style="color: var(--text-secondary);">9951028866</a></div>
+ </div>
+ <div class="footer-contact-item">
+ <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+ <div><a href="mailto:Sales@mugdhas.com" style="color: var(--text-secondary);">✉️ Sales@mugdhas.com</a></div>
+ </div>
+ <div class="footer-contact-item">
+ <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+ <div>D.No. 46-139, 1475/601,<br>Revenue Ward No. 46, Ongole,<br>Prakasam District, AP – 523002</div>
+ </div>
+ <div class="footer-social">
+ <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+ <a href="https://instagram.com/mugdhacons" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+ <a href="https://wa.me/919951028866" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+ </div>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <p>&copy; 2024 Mugdha Constructions LLP. All rights reserved.</p>
+ <p>Building Trust Since Day One.</p>
+ </div>
+ </div>
+</footer>
+
+<!-- WhatsApp FAB (desktop) -->
+<a href="https://wa.me/919951028866" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+ <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- Floating Mobile Bar -->
+<div class="floating-bar" role="navigation" aria-label="Quick actions">
+ <div class="floating-bar__inner">
+ <a href="tel:9951028866" class="floating-bar__btn" aria-label="Call us">
+ <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+ Call
+ </a>
+ <a href="https://wa.me/919951028866" class="floating-bar__btn" aria-label="WhatsApp">
+ <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+ WhatsApp
+ </a>
+ <a href="contact.html" class="floating-bar__btn floating-bar__btn--primary" aria-label="Get a quote">
+ <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+ Get Quote
+ </a>
+ </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/plot-counter.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () =>{
+ const urlParams = new URLSearchParams(window.location.search);
+ const projectSlug = urlParams.get('project');
+
+ if (!projectSlug) {
+ showError();
+ return;
+ }
+
+ try {
+ const response = await fetch('data/projects.json');
+ const data = await response.json();
+ const project = data.projects.find(p =>p.id === projectSlug);
+
+ if (project) {
+ renderProject(project);
+ } else {
+ showError();
+ }
+ } catch (error) {
+ console.error('Error fetching project data:', error);
+ showError();
+ }
+
+ function showError() {
+ document.getElementById('project-loading').style.display = 'none';
+ document.getElementById('project-error').style.display = 'block';
+ }
+
+ function renderProject(project) {
+ document.title = `${project.title} | Mugdha Constructions LLP`;
+ 
+ document.getElementById('project-title').textContent = project.title;
+ document.getElementById('project-location').textContent = project.location;
+ 
+ // Description
+ const descContainer = document.getElementById('project-description');
+ descContainer.innerHTML = project.description.map(p =>`<p>${p}</p>`).join('');
+
+ // Tracker
+ if (project.plots) {
+ document.getElementById('availability-section').style.display = 'block';
+ document.getElementById('tracker-sold').setAttribute('data-count-to', project.plots.sold);
+ document.getElementById('tracker-total').textContent = project.plots.total;
+ 
+ const bar = document.getElementById('tracker-bar');
+ bar.setAttribute('data-sold', project.plots.sold);
+ bar.setAttribute('data-total', project.plots.total);
+ 
+ document.getElementById('tracker-sold-label').textContent = project.plots.sold;
+ document.getElementById('tracker-avail-label').textContent = project.plots.total - project.plots.sold;
+ }
+
+ // Features
+ if (project.features && project.features.length) {
+ const featuresHtml = project.features.map(f =>`
+ <li>
+ <svg class="feature-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#C9932A" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+ <span>${f}</span>
+ </li>
+ `).join('');
+ document.getElementById('project-features').innerHTML = featuresHtml;
+ }
+
+ // Highlights
+ if (project.details) {
+ const highlightsHtml = Object.entries(project.details).map(([key, value]) =>`
+ <li>
+ <strong>${key}:</strong>${value}
+ </li>
+ `).join('');
+ document.getElementById('project-highlights').innerHTML = highlightsHtml;
+ }
+
+ // Gallery
+ if (project.gallery && project.gallery.length) {
+ const galleryHtml = project.gallery.map((img, index) =>`
+ <div class="gallery-item" data-index="${index}" tabindex="0" role="button" aria-label="View larger image">
+ <img src="${img.url}" alt="${img.caption || project.title}" loading="lazy">
+ </div>
+ `).join('');
+ document.getElementById('project-gallery').innerHTML = galleryHtml;
+ 
+ initLightbox(project.gallery);
+ }
+
+ // Set Hero Background
+ if (project.image) {
+ const hero = document.querySelector('.project-hero');
+ hero.style.backgroundImage = `linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.9)), url('${project.image}')`;
+ }
+
+ document.getElementById('project-loading').style.display = 'none';
+ document.getElementById('project-content').style.display = 'block';
+
+ // Initialize counters now that elements are rendered
+ if (typeof initPlotCounters === 'function') initPlotCounters();
+ if (typeof initPlotBars === 'function') initPlotBars();
+ }
+
+ function initLightbox(images) {
+ const galleryItems = document.querySelectorAll('.gallery-item');
+ const lightbox = document.getElementById('gallery-lightbox');
+ const lightboxImg = document.getElementById('lightbox-img');
+ const lightboxCaption = document.getElementById('lightbox-caption');
+ const btnClose = document.getElementById('lightbox-close');
+ const btnPrev = document.getElementById('lightbox-prev');
+ const btnNext = document.getElementById('lightbox-next');
+ const overlay = document.getElementById('lightbox-overlay');
+ 
+ let currentIndex = 0;
+
+ function openLightbox(index) {
+ currentIndex = index;
+ updateLightboxContent();
+ lightbox.classList.add('is-open');
+ lightbox.setAttribute('aria-hidden', 'false');
+ document.body.style.overflow = 'hidden';
+ }
+
+ function closeLightbox() {
+ lightbox.classList.remove('is-open');
+ lightbox.setAttribute('aria-hidden', 'true');
+ document.body.style.overflow = '';
+ }
+
+ function updateLightboxContent() {
+ const img = images[currentIndex];
+ lightboxImg.src = img.url;
+ lightboxImg.alt = img.caption || 'Project Image';
+ lightboxCaption.textContent = img.caption || '';
+ }
+
+ function showNext() {
+ currentIndex = (currentIndex + 1) % images.length;
+ updateLightboxContent();
+ }
+
+ function showPrev() {
+ currentIndex = (currentIndex - 1 + images.length) % images.length;
+ updateLightboxContent();
+ }
+
+ galleryItems.forEach((item, index) =>{
+ item.addEventListener('click', () =>openLightbox(index));
+ item.addEventListener('keypress', (e) =>{
+ if (e.key === 'Enter') openLightbox(index);
+ });
+ });
+
+ btnClose.addEventListener('click', closeLightbox);
+ overlay.addEventListener('click', closeLightbox);
+ btnNext.addEventListener('click', showNext);
+ btnPrev.addEventListener('click', showPrev);
+
+ document.addEventListener('keydown', (e) =>{
+ if (!lightbox.classList.contains('is-open')) return;
+ if (e.key === 'Escape') closeLightbox();
+ if (e.key === 'ArrowRight') showNext();
+ if (e.key === 'ArrowLeft') showPrev();
+ });
+ }
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

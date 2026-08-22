@@ -1,0 +1,35 @@
+How to add / update /delete site content (images, numbers, project details, social links)
+
+1) Images
+- Add: place image files into assets\images (recommended subfolders: projects, team).
+- Use <img src="assets/images/<filename>" alt="Description" loading="lazy"> in the relevant HTML page (e.g., construction.html).
+- Optimize images before upload (JPEG/WebP for photos, PNG for transparency). Ensure you own rights or use properly licensed images.
+- Delete: remove the file from assets\images and remove or update references in HTML/CSS.
+
+2) Numbers & Text
+- Edit text directly in the HTML file where it appears (e.g., contact phone in footer and contact.html).
+- For repeated values (phone, email), update every file or consider centralizing later into a small site-data JSON and loading it via JS.
+
+3) Project details
+- Add a new project page (copy project-detail.html as template) and update assets images and text.
+- Link new project from projects.html by adding an <a> to the project-detail file.
+
+4) Social links
+- Edit contact.html and footer areas: replace href="#" with your social profile URL (e.g., https://facebook.com/yourpage).
+- WhatsApp link format: https://wa.me/919951028866 (use country code, no +).
+
+5) Copyrights & attribution
+- Only upload images you own or that are licensed for commercial use (e.g., Creative Commons with commercial-use allowed, or purchased stock).
+- Keep a record of license/source with the image file name or in a separate LICENSES.txt file.
+
+6) After hosting (live site)
+- If hosting on a static host (Netlify, GitHub Pages, Vercel): commit and push updated files, the host will redeploy.
+- If you only have access to the server via FTP/Control panel: upload changed files to the public_html (or equivalent) folder, preserving paths.
+
+If you want, I can:
+- Replace the white logo with an off-white SVG version (preferred) if you provide the logo SVG or a hex color (recommend #F7F6F2).
+- Wire social links directly if you provide the URLs.
+- Add emoji in specific places (tell me which headings/buttons).
+
+Notes
+- I used existing images in assets/images for the Construction page placeholders. Confirm replacements or provide your own images to use instead.

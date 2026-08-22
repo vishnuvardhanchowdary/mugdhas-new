@@ -1,0 +1,112 @@
+/* hvac.css */
+.hvac-services {
+    padding: var(--space-8) 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.service-card {
+    background-color: var(--surface);
+    padding: var(--space-6);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-card__icon {
+    width: 48px;
+    height: 48px;
+    color: var(--primary);
+    margin-bottom: var(--space-4);
+}
+
+.service-card__title {
+    font-size: var(--text-xl);
+    font-family: var(--font-heading);
+    margin-bottom: var(--space-4);
+}
+
+.service-card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-6) 0;
+}
+
+.service-card__list li {
+    position: relative;
+    padding-left: var(--space-5);
+    margin-bottom: var(--space-2);
+    color: var(--text-secondary);
+}
+
+.service-card__list li::before {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.trust-section {
+    background-color: var(--surface-alt);
+    padding: var(--space-8) 0;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+@media (min-width: 768px) {
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .trust-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.trust-card {
+    text-align: center;
+    padding: var(--space-4);
+}
+
+.trust-card__icon {
+    width: 64px;
+    height: 64px;
+    color: var(--primary);
+    margin: 0 auto var(--space-4);
+}
+
+.trust-card__title {
+    font-weight: 600;
+    color: var(--text-primary);
+}
