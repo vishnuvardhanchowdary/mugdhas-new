@@ -11,7 +11,28 @@ document.addEventListener('DOMContentLoaded', () => {
   initWhatsAppFAB();
   initSmoothScroll();
   setActiveNav();
+  initHeroSlider();
 });
+
+/* ── Hero Image Slider (Clean Automatic Background Rotation) ── */
+function initHeroSlider() {
+  const slider = document.getElementById('hero-slider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.slider-slide');
+  if (!slides.length) return;
+
+  let currentSlide = 0;
+
+  function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  // Automatic background slide rotation every 4 seconds
+  setInterval(nextSlide, 4000);
+}
 
 /* ── Header Scroll Behavior ── */
 function initHeader() {

@@ -91,4 +91,4 @@ When hosting your site on services like **Netlify**, **Vercel**, **GitHub Pages*
 ## 📞 Support & Contacts
 - **Company**: Mugdha Constructions LLP
 - **Phone**: +91 9951028866
-- **Email**: info@mugdhas.com
+- **Email**: Sales@mugdhas.com

@@ -1,17 +1,28 @@
 {
   "projects": [
     {
+      "id": "bhagya-nagar-ongole",
       "slug": "bhagya-nagar-ongole",
       "name": "Bhagya Nagar",
+      "title": "Bhagya Nagar",
       "location": "Ongole, Prakasam District",
       "status": "ongoing",
       "totalPlots": 60,
       "soldPlots": 42,
-      "description": "Premium residential plots in a rapidly growing locality of Ongole. Well-planned layout with wide roads, underground drainage, and all essential amenities.",
+      "plots": { "total": 60, "sold": 42 },
+      "brochure": "assets/brochures/bhagya-nagar-brochure.pdf",
+      "description": [
+        "Premium residential plots in a rapidly growing locality of Ongole. Well-planned layout with wide roads, underground drainage, and all essential amenities."
+      ],
       "images": [
         "assets/images/bhagya-nagar-1.jpg",
         "assets/images/bhagya-nagar-2.jpg",
         "assets/images/bhagya-nagar-3.jpg"
+      ],
+      "gallery": [
+        { "url": "assets/images/bhagya-nagar-1.jpg", "caption": "Bhagya Nagar Layout Site View" },
+        { "url": "assets/images/bhagya-nagar-2.jpg", "caption": "Road & Underground Drainage Infrastructure" },
+        { "url": "assets/images/bhagya-nagar-3.jpg", "caption": "Surrounding Residential Layout" }
       ],
       "features": [
         "Clear legal titles with DTCP-approved layout",
@@ -26,42 +37,32 @@
         "plotSizes": "150 - 300 sq. yards",
         "facing": "East & North facing plots available",
         "possession": "Immediate registration available for sold plots"
+      },
+      "details": {
+        "Plot Sizes": "150 - 300 sq. yards",
+        "Facing": "East & North facing plots available",
+        "Possession": "Immediate registration available"
       }
     },
     {
-      "slug": "upcoming-luxury-villas",
-      "name": "Mugdha Green Villas",
-      "location": "Ongole, Andhra Pradesh",
-      "status": "upcoming",
-      "totalPlots": null,
-      "soldPlots": null,
-      "description": "Upcoming luxury villa project featuring modern architecture, sustainable design, and premium amenities. Pre-launch registrations opening soon.",
-      "images": [
-        "assets/images/project-placeholder.jpg"
-      ],
-      "features": [
-        "Contemporary villa designs",
-        "Eco-friendly construction practices",
-        "Premium community amenities",
-        "Prime location with excellent connectivity"
-      ],
-      "bookingDetails": "Pre-launch registrations opening soon. Register your interest to get early-bird pricing.",
-      "highlights": {
-        "plotSizes": "To be announced",
-        "facing": "Multiple orientations available",
-        "possession": "Expected 2027"
-      }
-    },
-    {
+      "id": "mugdha-serene-park",
       "slug": "mugdha-serene-park",
       "name": "Mugdha Serene Park",
+      "title": "Mugdha Serene Park",
       "location": "East & South 40 Feet Road Junction, Ongole",
       "status": "ongoing",
       "totalPlots": 20,
       "soldPlots": 14,
-      "description": "Modern multi-storey luxury apartment complex featuring contemporary architecture, wooden accent paneling, spacious balconies, and private gated entry.",
+      "plots": { "total": 20, "sold": 14 },
+      "brochure": "assets/brochures/mugdha-serene-park-brochure.pdf",
+      "description": [
+        "Modern multi-storey luxury apartment complex featuring contemporary architecture, wooden accent paneling, spacious balconies, and private gated entry."
+      ],
       "images": [
         "assets/images/mugdha-serene-park.jpg"
+      ],
+      "gallery": [
+        { "url": "assets/images/mugdha-serene-park.jpg", "caption": "Mugdha Serene Park Elevation View" }
       ],
       "features": [
         "Contemporary 5-storey luxury apartment design",
@@ -76,6 +77,131 @@
         "plotSizes": "2 BHK & 3 BHK Apartments (1250 - 1850 sq. ft.)",
         "facing": "East & South 40 Feet Road Facing",
         "possession": "Ready for Occupation / Finishing Stage"
+      },
+      "details": {
+        "Apartment Sizes": "2 BHK & 3 BHK (1250 - 1850 sq. ft.)",
+        "Facing": "East & South 40 Feet Road Facing",
+        "Possession": "Ready for Occupation / Finishing Stage"
+      }
+    },
+    {
+      "id": "mugdha-prime-heights",
+      "slug": "mugdha-prime-heights",
+      "name": "Mugdha Prime Heights",
+      "title": "Mugdha Prime Heights",
+      "location": "Revenue Ward No. 46, Ongole, Andhra Pradesh",
+      "status": "completed",
+      "totalPlots": 24,
+      "soldPlots": 24,
+      "plots": { "total": 24, "sold": 24 },
+      "brochure": "assets/brochures/mugdha-prime-heights-brochure.pdf",
+      "description": [
+        "Successfully completed and delivered 5-storey premium residential apartment project in Ongole. Features modern elevation, 24/7 power backup, covered parking, and 100% Vasthu compliant 2 & 3 BHK flats."
+      ],
+      "images": [
+        "assets/images/supervision.jpg",
+        "assets/images/mugdha-serene-park.jpg"
+      ],
+      "gallery": [
+        { "url": "assets/images/supervision.jpg", "caption": "Completed Project Site Execution" },
+        { "url": "assets/images/mugdha-serene-park.jpg", "caption": "Mugdha Prime Heights Elevation" }
+      ],
+      "features": [
+        "100% Sold & Successfully Handed Over to Owners",
+        "DTCP Approved 5-Storey Residential Structure",
+        "High-speed Automatic Elevator & 24/7 Generator Backup",
+        "Premium Exterior Elevation with Teak & Glass Balconies",
+        "Covered Stilt Parking & Gated Entry Compound",
+        "1-Year Free Workmanship Maintenance Coverage"
+      ],
+      "bookingDetails": "Project 100% completed and occupied. All 24 units successfully handed over to homeowners.",
+      "highlights": {
+        "plotSizes": "2 BHK & 3 BHK (1200 - 1750 sq. ft.)",
+        "facing": "East & North Facing Units",
+        "possession": "Completed & Occupied (2024)"
+      },
+      "details": {
+        "Flats Total": "24 Units (100% Sold)",
+        "Status": "Completed & Handed Over (2024)",
+        "Warranty": "1-Year Workmanship Support Included"
+      }
+    },
+    {
+      "id": "mugdha-commercial-plaza",
+      "slug": "mugdha-commercial-plaza",
+      "name": "Mugdha Commercial & HVAC Plaza",
+      "title": "Mugdha Commercial & HVAC Plaza",
+      "location": "Miyapur Main Road, Hyderabad, Telangana",
+      "status": "completed",
+      "totalPlots": 16,
+      "soldPlots": 16,
+      "plots": { "total": 16, "sold": 16 },
+      "brochure": "assets/brochures/mugdha-commercial-plaza-brochure.pdf",
+      "description": [
+        "Comprehensive civil structural construction and central VRF HVAC installation for a multi-tenant commercial plaza in Miyapur, Hyderabad. Delivered on time with high energy efficiency standards."
+      ],
+      "images": [
+        "assets/images/hvac-installation.jpg",
+        "assets/images/hero-construction.jpg"
+      ],
+      "gallery": [
+        { "url": "assets/images/hvac-installation.jpg", "caption": "Central HVAC & Ducting System" },
+        { "url": "assets/images/hero-construction.jpg", "caption": "Commercial Structural Construction" }
+      ],
+      "features": [
+        "Complete Civil Structural Construction & Central HVAC Installation",
+        "Energy-efficient Central VRF Cooling System & Ductwork",
+        "Structural Steel & Reinforced Concrete Framework",
+        "Modern Glass Facade & Fire Safety Compliance",
+        "Delivered on schedule with 1-Year Free Maintenance Warranty"
+      ],
+      "bookingDetails": "Project fully completed and operational. 100% leased to commercial clients.",
+      "highlights": {
+        "plotSizes": "18,000 sq. ft. Total Built-up Area",
+        "facing": "Main Road Commercial Frontage",
+        "possession": "Completed & Operational (2024)"
+      },
+      "details": {
+        "Built-up Area": "18,000 sq. ft.",
+        "HVAC System": "Daikin VRF Central Air Conditioning",
+        "Status": "Completed & Fully Leased"
+      }
+    },
+    {
+      "id": "upcoming-luxury-villas",
+      "slug": "upcoming-luxury-villas",
+      "name": "Mugdha Green Villas",
+      "title": "Mugdha Green Villas",
+      "location": "Ongole, Andhra Pradesh",
+      "status": "upcoming",
+      "totalPlots": null,
+      "soldPlots": null,
+      "brochure": "assets/brochures/mugdha-green-villas-brochure.pdf",
+      "description": [
+        "Upcoming luxury villa project featuring modern architecture, sustainable design, and premium amenities. Pre-launch registrations opening soon."
+      ],
+      "images": [
+        "assets/images/project-placeholder.jpg"
+      ],
+      "gallery": [
+        { "url": "assets/images/project-placeholder.jpg", "caption": "Mugdha Green Villas Render Concept" }
+      ],
+      "features": [
+        "Contemporary villa designs",
+        "Eco-friendly construction practices",
+        "Premium community amenities",
+        "Prime location with excellent connectivity"
+      ],
+      "bookingDetails": "Pre-launch registrations opening soon. Register your interest to get early-bird pricing.",
+      "highlights": {
+        "plotSizes": "To be announced",
+        "facing": "Multiple orientations available",
+        "possession": "Expected 2027"
+      },
+      "details": {
+        "Villa Types": "Independent Luxury Villas",
+        "Status": "Pre-launch / Planning Stage",
+        "Possession": "Expected 2027"
       }
     }
   ]

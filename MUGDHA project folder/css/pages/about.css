@@ -1,37 +1,53 @@
 /* Page Hero */
 .page-hero {
-  padding: 12rem 0 6rem;
-  background-color: var(--color-surface);
+  padding: 140px 0 var(--space-12);
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
 }
 
 .page-hero::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at center, rgba(201, 147, 42, 0.05) 0%, transparent 70%);
-  pointer-events: none;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(6, 24, 43, 0.88) 0%, rgba(10, 37, 64, 0.82) 100%);
+  z-index: 0;
+}
+
+.page-hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .page-hero .section-label {
-  justify-content: center;
-  margin-bottom: var(--space-4);
+  display: inline-block;
+  font-size: var(--fs-xs, 0.875rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #FF7A14;
+  margin-bottom: var(--space-3);
 }
 
 .page-hero h1 {
   font-family: var(--font-heading);
-  font-size: var(--text-5xl);
-  color: var(--color-primary);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  color: #FFFFFF !important;
   margin-bottom: var(--space-4);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 
-.page-hero .subtitle {
-  font-size: var(--text-lg);
-  color: var(--text-secondary);
-  max-width: 600px;
+.page-hero .subtitle, .page-hero p {
+  font-size: 1.15rem;
+  color: #FFFFFF !important;
+  opacity: 0.95;
+  max-width: 680px;
   margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* Story Section */

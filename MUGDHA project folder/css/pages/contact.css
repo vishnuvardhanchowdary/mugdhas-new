@@ -36,7 +36,13 @@
   font-weight: 500;
   color: var(--text-muted);
   position: relative;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.progress-step:hover {
+  color: var(--color-primary, var(--gold-dark));
 }
 
 .progress-step::after {
@@ -53,12 +59,26 @@
 }
 
 .progress-step.active {
-  color: var(--gold-dark);
-  font-weight: 600;
+  color: var(--orange, #F56B00);
+  font-weight: 700;
 }
 
 .progress-step.active::after {
+  background-color: var(--orange, #F56B00);
+  height: 3px;
   transform: scaleX(1);
+}
+
+.progress-step.completed {
+  color: var(--navy, #0A2540);
+  font-weight: 600;
+}
+
+.progress-step.completed::after {
+  background-color: var(--orange, #F56B00);
+  height: 3px;
+  transform: scaleX(1);
+  opacity: 0.4;
 }
 
 /* Form Steps */

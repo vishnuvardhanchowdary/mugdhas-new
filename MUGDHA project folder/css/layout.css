@@ -137,8 +137,8 @@
 }
 
 .site-logo__icon {
-  width: 72px;
-  height: 72px;
+  width: 48px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,12 +156,12 @@
   background: transparent;
 }
 
-/* Larger header logo layout like the provided mock */
-.header-inner { gap: var(--space-6); }
+/* Header logo layout */
+.header-inner { gap: var(--space-4); }
 
 @media (min-width: 900px) {
   .site-logo__name { font-size: 1.25rem; }
-  .site-logo__icon { width: 88px; height: 88px; }
+  .site-logo__icon { width: 52px; height: 60px; }
 }
 
 /* Optional: increase header background warmth to match logo */
@@ -683,17 +683,19 @@ section { scroll-margin-top: 110px; }
 
 .page-hero h1 {
   font-size: var(--fs-display);
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   margin-bottom: var(--space-4);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .page-hero p, .page-hero .subtitle {
   font-size: var(--fs-body-lg);
-  color: rgba(248, 249, 250, 0.88);
+  color: #FFFFFF !important;
+  opacity: 0.95;
   max-width: 680px;
   margin: 0 auto;
   line-height: 1.6;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* Page Specific Hero Background Photography */

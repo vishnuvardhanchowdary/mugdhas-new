@@ -167,7 +167,7 @@ Then open: **http://localhost:8000**
 
 ### 2️⃣ **Update Phone Number & Email**
 
-**Search for:** `9951028866` and `info@mugdhas.com` in all files
+**Search for:** `9951028866` and `Sales@mugdhas.com` in all files
 
 **Files to update:**
 - `index.html` — footer
@@ -282,7 +282,7 @@ Simply open any `.html` file and edit the text directly. Common sections:
 
 **Company:** Mugdha Constructions LLP  
 **Phone:** 9951028866  
-**Email:** info@mugdhas.com  
+**Email:** Sales@mugdhas.com  
 **Location:** D.No. 46-139, 1475/601, Revenue Ward No. 46, Ongole, Prakasam District, AP – 523002  
 **WhatsApp:** https://wa.me/919951028866
 

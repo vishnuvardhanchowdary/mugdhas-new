@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="UTF-8">
@@ -29,10 +29,10 @@
  <div class="container header-inner">
  <a href="index.html" class="site-logo" aria-label="Mugdha Constructions LLP — Home">
  <div class="site-logo__icon">
- <img src="assets/images/mugdha-logo.png" alt="Mugdha Constructions Logo" width="56" height="56">
+ <img src="assets/images/mugdha-logo.png" alt="Mugdha Constructions Logo" width="48" height="56">
  </div>
  <div class="site-logo__text">
- <span class="site-logo__name">Mugdha Construction LLP</span>
+ <span class="site-logo__name">Mugdha Constructions LLP</span>
  <span class="site-logo__tagline">Building Trust. Shaping Structures.</span>
  </div>
  </a>
@@ -74,37 +74,10 @@
  </div>
  </section>
 
- <!-- Plot Availability Tracker -->
- <section class="section py-section bg-light project-tracker-section reveal" id="availability-section" style="display: none;">
- <div class="container text-center">
- <div class="section-label"><span>01</span>Availability</div>
- <h2 class="mb-4">Current Plot Availability</h2>
- 
- <div class="project-tracker">
- <div class="project-tracker__count h2 mb-2">
- <span class="plot-sold text-gold" id="tracker-sold" data-count-to="0">0</span>
- <span class="plot-total text-muted">of <span id="tracker-total">0</span>Plots Sold</span>
- </div>
- 
- <div class="plot-bar-container large-bar mb-4">
- <div class="plot-bar" id="tracker-bar" data-sold="0" data-total="100">
- <div class="plot-bar__fill"></div>
- </div>
- <div class="plot-bar__labels">
- <span class="text-gold">Sold: <span id="tracker-sold-label">0</span></span>
- <span>Available: <span id="tracker-avail-label">0</span></span>
- </div>
- </div>
- 
- <a href="#booking-cta" class="btn btn--primary btn--large">Book Now</a>
- </div>
- </div>
- </section>
-
  <!-- Project Gallery -->
  <section class="section py-section project-gallery-section reveal">
  <div class="container">
- <div class="section-label"><span>02</span>Gallery</div>
+ <div class="section-label"><span>01</span>Gallery</div>
  <h2>Project Gallery</h2>
  
  <div class="gallery-grid mt-4" id="project-gallery">
@@ -116,7 +89,7 @@
  <!-- Project Details -->
  <section class="section py-section bg-light project-details-section reveal">
  <div class="container">
- <div class="section-label"><span>03</span>Details</div>
+ <div class="section-label"><span>02</span>Details</div>
  
  <div class="project-details-grid">
  <div class="project-details-left">
@@ -131,14 +104,24 @@
  </ul>
  </div>
  
- <div class="project-details-right">
- <div class="highlights-card">
- <h3>Project Highlights</h3>
- <ul class="highlights-list mt-3" id="project-highlights">
- <!-- Highlights populated by JS -->
- </ul>
- </div>
- </div>
+  <div class="project-details-right">
+  <div class="highlights-card">
+  <h3>Project Highlights</h3>
+  <ul class="highlights-list mt-3" id="project-highlights">
+  <!-- Highlights populated by JS -->
+  </ul>
+  </div>
+
+  <!-- Download Project Brochure Card -->
+  <div class="highlights-card" style="margin-top: var(--space-6); background: linear-gradient(135deg, var(--navy) 0%, #06182B 100%); color: white; border: 1.5px solid var(--orange); border-radius: var(--radius-md); padding: var(--space-6);">
+    <h3 style="color: var(--orange); margin-bottom: 8px;">Project Brochure</h3>
+    <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.85); margin-bottom: 16px;">Download official floor plans, site layout, specifications, and project details (PDF).</p>
+    <a id="project-brochure-link" href="#" download class="btn btn--primary" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 8px;">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+      Download Brochure (PDF)
+    </a>
+  </div>
+  </div>
  </div>
  </div>
  </section>
@@ -156,7 +139,7 @@
  <a href="https://wa.me/919951028866" class="btn btn--outline-gold" target="_blank" rel="noopener">
  WhatsApp Us
  </a>
- <a href="contact.html" class="btn btn--outline">
+ <a href="contact.html?tab=project" class="btn btn--outline">
  Visit Contact Page
  </a>
  </div>
@@ -195,10 +178,10 @@
  <div class="footer-brand">
  <a href="index.html" class="site-logo" style="margin-bottom: var(--space-2);">
  <div class="site-logo__icon">
- <img src="assets/images/mugdha-logo.png" alt="Mugdha Constructions Logo" width="56" height="56">
+ <img src="assets/images/mugdha-logo.png" alt="Mugdha Constructions Logo" width="48" height="56">
  </div>
  <div class="site-logo__text">
- <span class="site-logo__name">Mugdha Construction LLP</span>
+ <span class="site-logo__name">Mugdha Constructions LLP</span>
  <span class="site-logo__tagline">Building Trust. Shaping Structures.</span>
  </div>
  </a>
@@ -232,14 +215,14 @@
  </div>
  <div class="footer-contact-item">
  <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
- <div><a href="mailto:mugdhacons@gmail.com" style="color: var(--text-secondary);">✉️ mugdhacons@gmail.com</a></div>
+ <div><a href="mailto:Sales@mugdhas.com" style="color: var(--text-secondary);">✉️ Sales@mugdhas.com</a></div>
  </div>
  <div class="footer-contact-item">
  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
- <div>D.No. 46-139, 1475/601,<br>Revenue Ward No. 46, Ongole,<br>Prakasam District, AP – 523002</div>
+ <div><strong>Hyderabad:</strong> Pranaam Hospital Lane, Miyapur, Hyderabad – 500049<br><strong style="margin-top: 4px; display: inline-block;">Ongole:</strong> D.No. 46-139, 1475/601, Revenue Ward No. 46, Ongole, AP – 523002</div>
  </div>
  <div class="footer-social">
- <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+ <a href="https://www.facebook.com/profile.php?id=61593596284932" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
  <a href="https://instagram.com/mugdhacons" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
  <a href="https://wa.me/919951028866" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
  </div>
@@ -276,7 +259,6 @@
 </div>
 
 <script src="js/main.js"></script>
-<script src="js/plot-counter.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', async () =>{
  const urlParams = new URLSearchParams(window.location.search);
@@ -287,20 +269,137 @@ document.addEventListener('DOMContentLoaded', async () =>{
  return;
  }
 
- try {
- const response = await fetch('data/projects.json');
- const data = await response.json();
- const project = data.projects.find(p =>p.id === projectSlug);
+  const DEFAULT_PROJECTS = [
+    {
+      id: "bhagya-nagar-ongole",
+      slug: "bhagya-nagar-ongole",
+      title: "Bhagya Nagar",
+      name: "Bhagya Nagar",
+      location: "Ongole, Prakasam District",
+      status: "ongoing",
+      plots: { total: 60, sold: 42 },
+      description: ["Premium residential plots in a rapidly growing locality of Ongole. Well-planned layout with wide roads, underground drainage, and all essential amenities."],
+      gallery: [
+        { url: "assets/images/bhagya-nagar-1.jpg", caption: "Bhagya Nagar Layout Site View" },
+        { url: "assets/images/bhagya-nagar-2.jpg", caption: "Road & Underground Drainage Infrastructure" },
+        { url: "assets/images/bhagya-nagar-3.jpg", caption: "Surrounding Residential Layout" }
+      ],
+      features: [
+        "Clear legal titles with DTCP-approved layout",
+        "Well-laid BT roads with underground drainage",
+        "24/7 water supply and electricity connections",
+        "Proximity to schools, hospitals, and markets",
+        "Gated community with compound wall",
+        "Parks and green spaces within the layout"
+      ],
+      bookingDetails: "Booking starts at ₹25,000. Flexible payment plans available. Contact us at 9951028866 for site visits and pricing details.",
+      details: { "Plot Sizes": "150 - 300 sq. yards", "Facing": "East & North facing plots available", "Possession": "Immediate registration available" }
+    },
+    {
+      id: "mugdha-serene-park",
+      slug: "mugdha-serene-park",
+      title: "Mugdha Serene Park",
+      name: "Mugdha Serene Park",
+      location: "East & South 40 Feet Road Junction, Ongole",
+      status: "ongoing",
+      plots: { total: 20, sold: 14 },
+      description: ["Modern multi-storey luxury apartment complex featuring contemporary architecture, wooden accent paneling, spacious balconies, and private gated entry."],
+      gallery: [{ url: "assets/images/mugdha-serene-park.jpg", caption: "Mugdha Serene Park Elevation View" }],
+      features: [
+        "Contemporary 5-storey luxury apartment design",
+        "Prime corner location on 40-foot wide roads",
+        "Private gated compound with dedicated parking",
+        "Spacious balconies with glass railings & green views",
+        "Elevator, 24/7 power backup & water supply",
+        "100% Vasthu compliant floor plans"
+      ],
+      bookingDetails: "Flats available for immediate booking. Contact 9951028866 for floor plans and site visits.",
+      details: { "Apartment Sizes": "2 BHK & 3 BHK (1250 - 1850 sq. ft.)", "Facing": "East & South 40 Feet Road Facing", "Possession": "Ready for Occupation" }
+    },
+    {
+      id: "mugdha-prime-heights",
+      slug: "mugdha-prime-heights",
+      title: "Mugdha Prime Heights",
+      name: "Mugdha Prime Heights",
+      location: "Revenue Ward No. 46, Ongole, Andhra Pradesh",
+      status: "completed",
+      plots: { total: 24, sold: 24 },
+      description: ["Successfully completed and delivered 5-storey premium residential apartment project in Ongole. Features modern elevation, 24/7 power backup, covered parking, and 100% Vasthu compliant 2 & 3 BHK flats."],
+      gallery: [
+        { url: "assets/images/supervision.jpg", caption: "Completed Project Site Execution" },
+        { url: "assets/images/mugdha-serene-park.jpg", caption: "Mugdha Prime Heights Elevation" }
+      ],
+      features: [
+        "100% Sold & Successfully Handed Over to Owners",
+        "DTCP Approved 5-Storey Residential Structure",
+        "High-speed Automatic Elevator & 24/7 Generator Backup",
+        "Premium Exterior Elevation with Teak & Glass Balconies",
+        "Covered Stilt Parking & Gated Entry Compound"
+      ],
+      bookingDetails: "Project 100% completed and occupied. All 24 units successfully handed over to homeowners.",
+      details: { "Flats Total": "24 Units (100% Sold)", "Status": "Completed & Handed Over (2024)", "Warranty": "1-Year Workmanship Support Included" }
+    },
+    {
+      id: "mugdha-commercial-plaza",
+      slug: "mugdha-commercial-plaza",
+      title: "Mugdha Commercial & HVAC Plaza",
+      name: "Mugdha Commercial & HVAC Plaza",
+      location: "Miyapur Main Road, Hyderabad, Telangana",
+      status: "completed",
+      plots: { total: 16, sold: 16 },
+      description: ["Comprehensive civil structural construction and central VRF HVAC installation for a multi-tenant commercial plaza in Miyapur, Hyderabad. Delivered on time with high energy efficiency standards."],
+      gallery: [
+        { url: "assets/images/hvac-installation.jpg", caption: "Central HVAC & Ducting System" },
+        { url: "assets/images/hero-construction.jpg", caption: "Commercial Structural Construction" }
+      ],
+      features: [
+        "Complete Civil Structural Construction & Central HVAC Installation",
+        "Energy-efficient Central VRF Cooling System & Ductwork",
+        "Structural Steel & Reinforced Concrete Framework",
+        "Modern Glass Facade & Fire Safety Compliance"
+      ],
+      bookingDetails: "Project fully completed and operational. 100% leased to commercial clients.",
+      details: { "Built-up Area": "18,000 sq. ft.", "HVAC System": "Daikin VRF Central Air Conditioning", "Status": "Completed & Fully Leased" }
+    },
+    {
+      id: "upcoming-luxury-villas",
+      slug: "upcoming-luxury-villas",
+      title: "Mugdha Green Villas",
+      name: "Mugdha Green Villas",
+      location: "Ongole, Andhra Pradesh",
+      status: "upcoming",
+      plots: null,
+      description: ["Upcoming luxury villa project featuring modern architecture, sustainable design, and premium amenities. Pre-launch registrations opening soon."],
+      gallery: [{ url: "assets/images/project-placeholder.jpg", caption: "Mugdha Green Villas Render Concept" }],
+      features: [
+        "Contemporary villa designs",
+        "Eco-friendly construction practices",
+        "Premium community amenities"
+      ],
+      bookingDetails: "Pre-launch registrations opening soon. Register your interest to get early-bird pricing.",
+      details: { "Villa Types": "Independent Luxury Villas", "Status": "Pre-launch / Planning Stage", "Possession": "Expected 2027" }
+    }
+  ];
 
- if (project) {
- renderProject(project);
- } else {
- showError();
- }
- } catch (error) {
- console.error('Error fetching project data:', error);
- showError();
- }
+  let projectsList = [];
+
+  try {
+    const response = await fetch('data/projects.json');
+    if (!response.ok) throw new Error('HTTP status ' + response.status);
+    const data = await response.json();
+    projectsList = data.projects;
+  } catch (error) {
+    console.warn('Could not fetch data/projects.json (CORS/file:// restriction), using fallback:', error);
+    projectsList = DEFAULT_PROJECTS;
+  }
+
+  const project = projectsList.find(p => p.id === projectSlug || p.slug === projectSlug);
+
+  if (project) {
+    renderProject(project);
+  } else {
+    showError();
+  }
 
  function showError() {
  document.getElementById('project-loading').style.display = 'none';
@@ -316,20 +415,6 @@ document.addEventListener('DOMContentLoaded', async () =>{
  // Description
  const descContainer = document.getElementById('project-description');
  descContainer.innerHTML = project.description.map(p =>`<p>${p}</p>`).join('');
-
- // Tracker
- if (project.plots) {
- document.getElementById('availability-section').style.display = 'block';
- document.getElementById('tracker-sold').setAttribute('data-count-to', project.plots.sold);
- document.getElementById('tracker-total').textContent = project.plots.total;
- 
- const bar = document.getElementById('tracker-bar');
- bar.setAttribute('data-sold', project.plots.sold);
- bar.setAttribute('data-total', project.plots.total);
- 
- document.getElementById('tracker-sold-label').textContent = project.plots.sold;
- document.getElementById('tracker-avail-label').textContent = project.plots.total - project.plots.sold;
- }
 
  // Features
  if (project.features && project.features.length) {
@@ -351,6 +436,13 @@ document.addEventListener('DOMContentLoaded', async () =>{
  `).join('');
  document.getElementById('project-highlights').innerHTML = highlightsHtml;
  }
+
+  // Brochure Link
+  const brochureElem = document.getElementById('project-brochure-link');
+  if (brochureElem) {
+    const brochurePath = project.brochure || `assets/brochures/${project.slug || project.id}-brochure.pdf`;
+    brochureElem.setAttribute('href', brochurePath);
+  }
 
  // Gallery
  if (project.gallery && project.gallery.length) {
