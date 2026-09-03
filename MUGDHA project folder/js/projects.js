@@ -11,26 +11,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const DEFAULT_PROJECTS = [
     {
-      id: "bhagya-nagar-ongole",
-      slug: "bhagya-nagar-ongole",
-      name: "Bhagya Nagar",
-      title: "Bhagya Nagar",
-      location: "Ongole, Prakasam District",
-      status: "ongoing",
-      totalPlots: 60,
-      soldPlots: 42,
-      plots: { total: 60, sold: 42 },
-      description: ["Premium residential plots in a rapidly growing locality of Ongole. Well-planned layout with wide roads, underground drainage, and all essential amenities."],
-      images: ["assets/images/bhagya-nagar-1.jpg", "assets/images/bhagya-nagar-2.jpg", "assets/images/bhagya-nagar-3.jpg"],
-      features: [
-        "Clear legal titles with DTCP-approved layout",
-        "Well-laid BT roads with underground drainage",
-        "24/7 water supply and electricity connections",
-        "Proximity to schools, hospitals, and markets",
-        "Gated community with compound wall",
-        "Parks and green spaces within the layout"
-      ]
-    },
+  id: "radha-krishna-enclave",
+  slug: "radha-krishna-enclave",
+  name: "Radha Krishna Enclave",
+  title: "Radha Krishna Enclave",
+
+  location: "Near Police Quarters, 80 Feet Road, Vasavi Colony, Ongole",
+
+  status: "ongoing",
+
+  totalPlots: null,
+  soldPlots: null,
+  plots: null,
+
+  brochure: "assets/brochures/radha-krishna-enclave-brochure.pdf",
+
+  description: [
+    "Radha Krishna Enclave is a premium residential apartment project in Ongole, offering spacious 3 BHK homes with modern design, quality construction, and comfortable living spaces."
+  ],
+
+  images: [
+    "assets/images/radha-krishna-enclave-1.png",
+    "assets/images/radha-krishna-enclave-2.png",
+    "assets/images/radha-krishna-enclave-3.png"
+  ],
+
+  features: [
+    "Luxurious 3 BHK Flats",
+    "R.C.C. Framed Structure",
+    "Premium Quality Tiles",
+    "UPVC Windows with Mesh and Grill",
+    "Granite Cooking Platform",
+    "Municipal and Bore Water Supply",
+    "Generator Backup for Common Areas",
+    "Lift Facility",
+    "Premium Electrical Fittings",
+    "Teak Wood Main Door Frame"
+  ]
+},
     {
       id: "mugdha-serene-park",
       slug: "mugdha-serene-park",
